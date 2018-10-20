@@ -10,6 +10,11 @@
     name=rsync
     state=latest
 
+- name: install python-dnspython
+  package: >
+    name=python-dnspython
+    state=latest
+
 - name: create tinc systemd service file (debian 9 & ubuntu 18)
   template: >
     src=tinc.service.j2
